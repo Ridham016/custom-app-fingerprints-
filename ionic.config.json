@@ -1,0 +1,7 @@
+{
+  "name": "custom-ComponentApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

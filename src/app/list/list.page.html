@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-input type="text" [(ngModel)]="name"></ion-input>
+    <ion-button  (click)="clicked=!clicked">NameAdd</ion-button>
+    <div class="any" *ngIf="clicked" >
+<app-list-component  [name]="name"></app-list-component>
+    </div>
+</ion-content>
